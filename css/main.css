@@ -1,3 +1,6 @@
+/* =========================
+   IMPRESIÓN
+========================= */
 @media print {
   body {
     -webkit-print-color-adjust: exact; /* Chrome, Safari */
@@ -5,7 +8,7 @@
   }
 
   .sidebar {
-    background-color: #2c3e50 !important; /* Asegura que el color se aplique en impresión */
+    background-color: #2c3e50 !important;
     color: white !important;
   }
 
@@ -15,6 +18,9 @@
   }
 }
 
+/* =========================
+   GLOBAL
+========================= */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -29,14 +35,18 @@ body {
   margin: 40px auto;
   background: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-/* Columna izquierda */
+/* =========================
+   SIDEBAR IZQUIERDO
+========================= */
 .sidebar {
   background: #2e2c50;
   color: white;
   padding: 30px;
   text-align: center;
+  border-radius: 10px 0 0 10px;
 }
 
 .sidebar img {
@@ -55,7 +65,7 @@ body {
 .sidebar h3 {
   margin-top: 30px;
   font-size: 1.1rem;
-  border-bottom: 2px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -69,9 +79,32 @@ body {
 
 .sidebar ul li {
   margin: 8px 0;
+  display: flex;
+  align-items: center;
 }
 
-/* Columna derecha */
+.download-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 12px 0;
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #c0392b;
+}
+
+/* =========================
+   COLUMNA DERECHA
+========================= */
 .main {
   padding: 30px;
 }
@@ -97,43 +130,20 @@ body {
   line-height: 1.6;
 }
 
-.sidebar h3 {
-  margin-top: 30px;
-  font-size: 1.1rem;
-  border-bottom: 1px solid #ecf0f1;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.sidebar ul li {
-  margin: 8px 0;
-  display: flex;
-  align-items: center;
-}
-.download-btn {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px; /* separa el botón del contenido anterior */
-  padding: 12px 0;
-  background-color: #e74c3c; /* color rojo, puedes cambiarlo */
-  color: white;
-  font-weight: bold;
-  border-radius: 25px; /* botón redondeado */
-  text-decoration: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #c0392b;
-}
-
+/* =========================
+   TOGGLE DE IDIOMA
+========================= */
 .language-toggle {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 20px;
+
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  padding: 10px 0;
 }
 
 /* Switch */
@@ -151,7 +161,6 @@ body {
   height: 0;
 }
 
-/* Slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -176,7 +185,6 @@ body {
   border-radius: 50%;
 }
 
-/* Estado ON */
 input:checked + .slider {
   background-color: #2c3e50;
 }
@@ -185,7 +193,34 @@ input:checked + .slider:before {
   transform: translateX(25px);
 }
 
-/* Texto al lado */
 #langLabel {
   font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE PARA MÓVILES
+========================= */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .language-toggle {
+    justify-content: center;
+  }
 }
