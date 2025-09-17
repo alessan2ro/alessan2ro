@@ -1,108 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV - Alessandro</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
-  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
-</head>
-<body>
-  <div class="container">
-    
-    <!-- Columna izquierda -->
-    <div class="sidebar">
-      <img src="images/alessandro.webp" alt="Foto perfil" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Alessandro</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Columna izquierda -->
+      <div class="sidebar">
+        <!-- Toggle arriba a la derecha -->
+        <div class="language-toggle">
+          <label class="switch">
+            <input type="checkbox" id="langToggle" />
+            <span class="slider round"></span>
+          </label>
+          <span id="langLabel">ES</span>
+        </div>
 
-      <h2>Alessandro Rodríguez</h2>
-      <p>Mobile Developer</p>
+        <div class="profile-header">
+          <img src="images/alessandro.webp" alt="Foto perfil" />
+        </div>
 
-      <h3>Contacto</h3>
-      <ul>
-        <li>Email: contactoalessan2ro@mail.com</li>
-        <li>Tel: +53 54250705</li>
-        <li>GitHub: github.com/san2ro</li>
-        <li>Santa Clara, Cuba</li>
-      </ul>
+        <h2>Alessandro Rodríguez</h2>
+        <p>Mobile Developer</p>
 
-      <h3>Idiomas</h3>
-      <ul>
-        <li>Español (Nativo)</li>
-        <li>Inglés (Básico)</li>
-      </ul>
+        <h3>Contacto</h3>
+        <ul>
+          <li>Email: contactoalessan2ro@mail.com</li>
+          <li>GitHub: github.com/san2ro</li>
+          <li>Santa Clara, Cuba</li>
+        </ul>
 
-      <h3>Habilidades Técnicas</h3>
-      <ul>
-        <li>Java, HTML, JavaScript</li>
-        <li>Retrofit, Moshi, Room</li>
-        <li>MVVM, LiveData, ViewModel</li>
-      </ul>
+        <h3>Idiomas</h3>
+        <ul>
+          <li>Español (Nativo)</li>
+          <li>Inglés (Básico)</li>
+        </ul>
 
-      <a href="assets/files/cv_alessandro.pdf" download class="download-btn">Descargar CV</a>
+        <h3>Habilidades Técnicas</h3>
+        <ul>
+          <li>Java, HTML, JavaScript</li>
+          <li>Retrofit, Moshi, Room</li>
+          <li>MVVM, LiveData, ViewModel</li>
+        </ul>
+
+        <a href="assets/files/cv_alessandro.pdf" download class="download-btn"
+          >Descargar CV</a
+        >
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="main">
+        <!-- Sobre mí -->
+        <div class="section" id="about">
+          <h2>Sobre mí</h2>
+          <p>
+            Desarrollador con experiencia en aplicaciones móviles y backend.
+            Apasionado por la creación de soluciones eficientes y escalables.
+          </p>
+        </div>
+
+        <!-- Experiencia Profesional -->
+        <div class="section" id="experience">
+          <h2>Experiencia Profesional</h2>
+          <h3>Desarrollador Freelance / Independiente (2021 – Actualidad)</h3>
+          <ul>
+            <li>
+              Desarrollo de aplicaciones móviles en Android (Java) con
+              arquitectura MVVM.
+            </li>
+            <li>
+              Creación de clientes en Java para el consumo de servicios REST
+              para proyectos personales.
+            </li>
+            <li>
+              Publicación de proyectos en GitHub, Play Store y plataformas
+              cubanas, alcanzando más de 30 mil descargas.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Habilidades Técnicas -->
+        <div class="section" id="skills">
+          <h2>Habilidades Técnicas</h2>
+          <ul>
+            <li>Dominio de Java para desarrollo Android.</li>
+            <li>Implementación de arquitecturas MVVM.</li>
+            <li>Optimización de rendimiento en apps.</li>
+          </ul>
+        </div>
+
+        <!-- Proyectos -->
+        <div class="section" id="projects">
+          <h2>Proyectos</h2>
+          <h3>Servicel</h3>
+          <p>
+            Aplicación móvil en Java para la gestión de servicios móviles de la
+            Empresa de Telecomunicaciones de Cuba (Etecsa).
+          </p>
+
+          <h3>Apklis API</h3>
+          <p>
+            Cliente en Java para el consumo de servicios REST, implementado con
+            Retrofit y Moshi, enfocado en la obtención de información de
+            aplicaciones en la tienda, así como comprobación de compras de apps.
+          </p>
+
+          <h3>Divisas</h3>
+          <p>
+            Aplicación móvil en Java para la consulta de tasas de cambio no
+            oficiales en Cuba, con funcionalidades de conversor, contar dinero
+            de manera sencilla y guardar tarjetas de bancos cubanos.
+          </p>
+
+          <h3>Tasas de cambio</h3>
+          <p>
+            Web en HTML y JavaScript para la consulta de tasas de cambio no
+            oficiales en Cuba, con funcionalidades de conversor.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <!-- Columna derecha -->
-    <div class="main">
-      
-      <!-- Toggle de idioma -->
-      <div class="language-toggle">
-        <label class="switch">
-          <input type="checkbox" id="langToggle" />
-          <span class="slider round"></span>
-        </label>
-        <span id="langLabel">ES</span>
-      </div>
-
-      <!-- Sobre mí -->
-      <div class="section" id="about">
-        <h2>Sobre mí</h2>
-        <p>
-          Desarrollador con experiencia en aplicaciones móviles y backend.
-          Apasionado por la creación de soluciones eficientes y escalables.
-        </p>
-      </div>
-
-      <!-- Experiencia Profesional -->
-      <div class="section" id="experience">
-        <h2>Experiencia Profesional</h2>
-        <h3>Desarrollador Freelance / Independiente (2021 – Actualidad)</h3>
-        <ul>
-          <li>Desarrollo de aplicaciones móviles en Android (Java) con arquitectura MVVM.</li>
-          <li>Creación de clientes en Java para el consumo de servicios REST para proyectos personales.</li>
-          <li>Publicación de proyectos en GitHub, Play Store y plataformas cubanas, alcanzando más de 30 mil descargas.</li>
-        </ul>
-      </div>
-
-      <!-- Habilidades Técnicas -->
-      <div class="section" id="skills">
-        <h2>Habilidades Técnicas</h2>
-        <ul>
-          <li>Dominio de Java para desarrollo Android.</li>
-          <li>Implementación de arquitecturas MVVM.</li>
-          <li>Optimización de rendimiento en apps.</li>
-        </ul>
-      </div>
-
-      <!-- Proyectos -->
-      <div class="section" id="projects">
-        <h2>Proyectos</h2>
-        <h3>Servicel</h3>
-        <p>Aplicación móvil en Java para la gestión de servicios móviles de la Empresa de Telecomunicaciones de Cuba (Etecsa).</p>
-
-        <h3>Apklis API</h3>
-        <p>Cliente en Java para el consumo de servicios REST, implementado con Retrofit y Moshi, enfocado en la obtención de información de aplicaciones en la tienda, así como comprobación de compras de apps.</p>
-
-        <h3>Divisas</h3>
-        <p>Aplicación móvil en Java para la consulta de tasas de cambio no oficiales en Cuba, con funcionalidades de conversor, contar dinero de manera sencilla y guardar tarjetas de bancos cubanos.</p>
-
-        <h3>Tasas de cambio</h3>
-        <p>Web en HTML y JavaScript para la consulta de tasas de cambio no oficiales en Cuba, con funcionalidades de conversor.</p>
-      </div>
-
-    </div>
-  </div>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>
