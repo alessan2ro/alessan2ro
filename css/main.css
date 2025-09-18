@@ -20,6 +20,10 @@ body {
   position: relative;
 }
 
+a{
+  color: #FFFFFF;
+}
+
 /* =========================
    TOGGLE DE IDIOMA (arriba derecha en sidebar)
 ========================= */
@@ -194,7 +198,7 @@ input:checked + .slider:before {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    padding: 20px;
+    padding: 10px;
   }
 
   .sidebar {
