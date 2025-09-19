@@ -20,8 +20,8 @@ body {
   position: relative;
 }
 
-a{
-  color: #FFFFFF;
+a {
+  color: #ffffff;
 }
 
 /* =========================
@@ -159,6 +159,55 @@ input:checked + .slider:before {
 
 .download-btn:hover {
   background-color: #c0392b;
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.tag-mobile-app {
+  width: 100px;
+  text-align: center;
+  padding: 8px 8px;
+  background-color: #bdcbda;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 25px;
+}
+
+.tag-api {
+  width: 100px;
+  text-align: center;
+  padding: 8px 8px;
+  background-color: #a7acf3;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 25px;
+}
+
+.tag-java {
+  width: 100px;
+  text-align: center;
+  padding: 8px 8px;
+  background-color: #e4b79d;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 25px;
+}
+
+.tag-source-code {
+  width: 100px;
+  text-align: center;
+  padding: 8px 8px;
+  background-color: #e4dd9d;
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 25px;
 }
 
 /* =========================
