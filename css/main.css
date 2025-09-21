@@ -164,6 +164,7 @@ input:checked + .slider:before {
 .tags {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .tag-mobile-app {

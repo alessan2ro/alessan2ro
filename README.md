@@ -10,7 +10,8 @@ Programmer by day, bug-squasher by night, coffee lover. I love learning new thin
 
 <h4>Tools and IDE</h4>
 
-![Static Badge](https://img.shields.io/badge/-androidstudio?style=social&logo=androidstudio&logoColor=%233DDC84&label=Android%20Studio) ![Static Badge](https://img.shields.io/badge/-androidstudio?style=social&logo=openai&logoColor=%23412991&label=ChatGPT&color=%23000000) ![Static Badge](https://img.shields.io/badge/-github?style=social&logo=github&logoColor=%23181717&label=Github&color=%23000000)
+[![My Skills](https://skillicons.dev/icons?i=androidstudio,github,powershell,vscode&theme=light)](https://skillicons.dev)
+
 
 <h4>Languages</h4>
 
