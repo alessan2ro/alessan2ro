@@ -215,7 +215,7 @@ input:checked + .slider:before {
   width: 100px;
   text-align: center;
   padding: 8px 8px;
-  background-color: #f76f4d;
+  background-color: #ff9378;
   color: #000;
   text-decoration: none;
   font-size: 12px;
@@ -226,7 +226,7 @@ input:checked + .slider:before {
   width: 100px;
   text-align: center;
   padding: 8px 8px;
-  background-color: #f7e64d;
+  background-color: #fff27f;
   color: #000;
   text-decoration: none;
   font-size: 12px;
@@ -237,7 +237,7 @@ input:checked + .slider:before {
   width: 100px;
   text-align: center;
   padding: 8px 8px;
-  background-color: #9287f7;
+  background-color: #9083ff;
   color: #000;
   text-decoration: none;
   font-size: 12px;
